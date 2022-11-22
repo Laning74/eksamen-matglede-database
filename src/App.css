@@ -1,5 +1,6 @@
 @import "./pages/home/home.module.css";
 @import "./pages/meals/meals.module.css";
+@import "./components/sideBarCategories/sideBarCategories.module.css";
 @import "./components/navBar/navBar.module.css";
 @import "./components/primaryButton/primaryButton.module.css";
 

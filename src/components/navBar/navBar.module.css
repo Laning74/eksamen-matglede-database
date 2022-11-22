@@ -3,6 +3,7 @@
   height: 10vh;
   background-color: var(--primaryColor);
   display: flex;
+  /* position: fixed; */
   align-items: center;
   justify-content: center;
 }
