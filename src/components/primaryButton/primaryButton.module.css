@@ -1,0 +1,8 @@
+.primary-button {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  background-color: rgb(236, 89, 10);
+  border: none;
+  border-radius: 5px;
+}

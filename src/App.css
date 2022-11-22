@@ -1,0 +1,19 @@
+@import "./pages/home/home.module.css";
+@import "./pages/meals/meals.module.css";
+@import "./components/navBar/navBar.module.css";
+@import "./components/primaryButton/primaryButton.module.css";
+
+.App {
+  text-align: center;
+}
+
+:root {
+  /* COLORS */
+  --primaryColor: #00406a;
+  --secondaryColor: #099eff;
+  --black: #000000;
+  --white: #fff;
+  --blackTransparent: rgba(0, 0, 0, 0.74);
+  --greyColor: #525252;
+  --lightGreyColor: #808080;
+}
