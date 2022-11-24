@@ -1,0 +1,16 @@
+.card {
+  width: 180px;
+  min-height: 200px;
+  border-radius: 1rem;
+  background-color: #128ebb;
+  padding: 5px;
+  margin: 5px;
+}
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+h3 {
+  color: white;
+  font-size: 18px;
+}

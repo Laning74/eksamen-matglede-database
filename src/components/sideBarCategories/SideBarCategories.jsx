@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
 
 const SideBar = () => {
   return (
@@ -7,41 +6,92 @@ const SideBar = () => {
       <div className="sidebar-wrapper">
         <ul className="sidebar-list">
           <li className="sidebar-item">
-            <Link className="sidebar-link" to="/home">
-              <p className="sidebar-text">
-                <FaHome size={30} />
-                Hjem
-              </p>
+            <Link className="sidebar-link" to="/category">
+              <p className="sidebar-text">Beef </p>
             </Link>
           </li>
 
           <li className="sidebar-item">
-            <Link to="/persons" className="sidebar-link">
-              <p className="sidebar-text">Personer</p>
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Chicken</p>
             </Link>
           </li>
 
           <li className="sidebar-item">
-            <Link to="/addperson" className="sidebar-link">
-              <p className="sidebar-text">Legg til person</p>
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Dessert</p>
             </Link>
           </li>
 
           <li className="sidebar-item">
-            <Link to="/cars" className="sidebar-link">
-              <p className="sidebar-text">Biler</p>
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Lamp</p>
             </Link>
           </li>
 
           <li className="sidebar-item">
-            <Link to="/addcar" className="sidebar-link">
-              <p className="sidebar-text">Legg til bil</p>
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Miscellaneous</p>
             </Link>
           </li>
 
           <li className="sidebar-item">
-            <Link to="/" className="sidebar-link">
-              <p className="sidebar-text">Logg ut</p>
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Pasta</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Pork</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Seafood</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Side</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Starter</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Starter</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Vegan</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Vegetarian</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Breakfast</p>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="/category" className="sidebar-link">
+              <p className="sidebar-text">Goat</p>
             </Link>
           </li>
         </ul>

@@ -1,5 +1,7 @@
 @import "./pages/home/home.module.css";
 @import "./pages/meals/meals.module.css";
+@import "./pages/category/category.module.css";
+@import "./components/card/card.module.css";
 @import "./components/sideBarCategories/sideBarCategories.module.css";
 @import "./components/navBar/navBar.module.css";
 @import "./components/primaryButton/primaryButton.module.css";
@@ -10,8 +12,8 @@
 
 :root {
   /* COLORS */
-  --primaryColor: #00406a;
-  --secondaryColor: #099eff;
+  --primaryColor: #144f1b;
+  --secondaryColor: #98c29c;
   --black: #000000;
   --white: #fff;
   --blackTransparent: rgba(0, 0, 0, 0.74);

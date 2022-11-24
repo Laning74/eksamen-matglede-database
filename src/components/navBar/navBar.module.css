@@ -3,35 +3,42 @@
   height: 10vh;
   background-color: var(--primaryColor);
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-h1 {
+.logo-tekst {
   color: azure;
 }
 
-/* .links-list {
-  height: 3rem;
+.navbar-text {
+  color: white;
+}
+
+.link-text {
+  color: white;
+  list-style: none;
+  margin: 20px;
+  margin-bottom: 40px;
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-right: 1rem;
-}
-
-.link-item {
-  border: 1px solid var(--white);
-  padding: 0.5rem;
-  border-radius: 5px;
-  color: var(--white);
-}
-
-a {
   text-decoration: none;
   cursor: pointer;
+  font-size: larger;
+  font-weight: 500;
+  /* gap: 3rem; */
+  display: inline-block;
 }
 
-nav li {
-  list-style: none;
-} */
+.nav-text-container {
+  margin-right: 30px;
+}
+
+.link-text.active {
+  background-color: var(--secondaryColor);
+}
+
+.link-text:hover {
+  color: var(--secondaryColor);
+}

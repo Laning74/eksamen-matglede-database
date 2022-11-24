@@ -14,11 +14,23 @@ export const AppContext = ({ children }) => {
       )
       .then((res) => {
         console.log(res.data.meals);
+        setMeals(res.data.meals);
+      });
+  }, []);
+
+  const fetchCategory = useCallback((category) => {
+    axios
+      .get(`https://www.themealdb.com/api/json/v1/1/categories.php`)
+      .then((res) => {
+        console.log(res.data.categories);
+        setCategory(res.data.categories);
       });
   }, []);
 
   return (
-    <foodContext.Provider value={{ fetchMeals }}>
+    <foodContext.Provider
+      value={{ fetchMeals, meals, fetchCategory, category }}
+    >
       {children}
     </foodContext.Provider>
   );

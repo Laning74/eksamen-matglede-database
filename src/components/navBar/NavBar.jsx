@@ -5,14 +5,23 @@ import { FaHome } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Her kommer logo</h1>
-      <Link className="sidebar-link" to="/home">
-        <p className="sidebar-text">
-          <FaHome size={30} />
-          Hjem
-        </p>
-      </Link>
+      <h1 className="logo-tekst">Her kommer logo</h1>
       <div>{/* <Logo /> */}</div>
+
+      <ul className="nav-text-container">
+        <Link className="link-text" to="/home">
+          <FaHome size={30} />
+        </Link>
+        <Link className="link-text" to="/home">
+          OPPSKRIFTER
+        </Link>
+        <Link className="link-text" to="/home">
+          UKEPLANLEGGER
+        </Link>
+        <Link className="link-text" to="/home">
+          DIN HANDLELISTE
+        </Link>
+      </ul>
     </nav>
   );
 };
