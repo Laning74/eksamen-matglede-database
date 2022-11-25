@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { foodContext } from "../context/Context";
 
-const Card = ({ data }) => {
+const Card = () => {
   const { fetchMeals, meals } = useContext(foodContext);
 
   return (

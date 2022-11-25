@@ -6,6 +6,7 @@ export const foodContext = createContext();
 export const AppContext = ({ children }) => {
   const [meals, setMeals] = useState([]);
   const [category, setCategory] = useState([]);
+  const [showCategory, setShowCategory] = useState([]);
 
   const fetchMeals = useCallback((searchMeals) => {
     axios
@@ -27,9 +28,26 @@ export const AppContext = ({ children }) => {
       });
   }, []);
 
+  const fetchClickCategory = useCallback((clickCategory) => {
+    axios
+      .get(
+        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${clickCategory}`
+      )
+      .then((res) => {
+        setShowCategory(res.data.meals);
+      });
+  }, []);
+
   return (
     <foodContext.Provider
-      value={{ fetchMeals, meals, fetchCategory, category }}
+      value={{
+        fetchMeals,
+        meals,
+        fetchCategory,
+        category,
+        fetchClickCategory,
+        showCategory,
+      }}
     >
       {children}
     </foodContext.Provider>

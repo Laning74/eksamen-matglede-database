@@ -6,28 +6,12 @@ import { foodContext } from "../../components/context/Context";
 
 const Meals = () => {
   const [searchMeals, setSearchMeals] = useState("");
-  //   const [show, setShow] = useState(false);
-  //   const [item, setItem] = useState("");
 
   const { fetchMeals, meals } = useContext(foodContext);
 
   const handleFetchMeals = useCallback(() => {
     fetchMeals(searchMeals);
   }, [searchMeals, fetchMeals]);
-
-  //   useEffect(() => {
-  //     setItem();
-  //     setShow(true);
-  //   }, [setItem, setShow]);
-
-  //    useEffect(() => {
-  //      fetch(url)
-  //        .then((res) => res.json())
-  //        .then((data) => {
-  //          setItem(data.meals);
-  //          setShow(true);
-  //        });
-  //    }, [url]);
 
   return (
     <>

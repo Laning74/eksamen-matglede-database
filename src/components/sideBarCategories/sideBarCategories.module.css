@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid var(--primaryColor);
-  height: 5vh;
+  height: 5.5vh;
 }
 .sidebar-item:hover {
   background-color: var(--secondaryColor);
