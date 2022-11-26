@@ -1,26 +1,31 @@
 // import Logo from "../logo/Logo";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
+import Logo from "../../../src/logo/Logo Matglede white.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="logo-tekst">Her kommer logo</h1>
-      <div>{/* <Logo /> */}</div>
+      <NavLink className="logo" to="/">
+        <img src={Logo} alt="Matglede logo" />
+      </NavLink>
 
       <ul className="nav-text-container">
-        <Link className="link-text" to="/home">
+        <NavLink className="link-text" to="/">
           <FaHome size={30} />
-        </Link>
-        <Link className="link-text" to="/home">
+        </NavLink>
+
+        <NavLink className="link-text" to="/meals">
           OPPSKRIFTER
-        </Link>
-        <Link className="link-text" to="/home">
+        </NavLink>
+
+        <NavLink className="link-text" to="/home">
           UKEPLANLEGGER
-        </Link>
-        <Link className="link-text" to="/home">
+        </NavLink>
+
+        <NavLink className="link-text" to="/home">
           DIN HANDLELISTE
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );

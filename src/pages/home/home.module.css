@@ -1,5 +1,5 @@
 .testing {
-  color: blueviolet;
+  color: rgb(196, 136, 34);
   z-index: 10;
 }
 
@@ -14,6 +14,17 @@
 }
 
 .front-container {
-  position: fixed;
+  position: absolute;
+  display: grid;
+  background-color: aqua;
+  width: 500px;
+  margin: 50px;
   /* z-index: 50; */
 }
+
+/* .front-grid {
+  background-color: aquamarine;
+} */
+/* .link-text {
+  color: white;
+} */

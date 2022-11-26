@@ -9,12 +9,10 @@
   padding: 5px;
 }
 
-.logo-tekst {
-  color: azure;
-}
-
-.navbar-text {
-  color: white;
+.logo {
+  width: 200px;
+  margin: 20px;
+  padding-bottom: 15px;
 }
 
 .link-text {
@@ -35,10 +33,10 @@
   margin-right: 30px;
 }
 
-.link-text.active {
-  background-color: var(--secondaryColor);
+.link-text:hover {
+  color: var(--secondaryColor);
 }
 
-.link-text:hover {
+.active {
   color: var(--secondaryColor);
 }

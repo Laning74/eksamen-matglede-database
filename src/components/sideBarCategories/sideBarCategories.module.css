@@ -41,7 +41,8 @@
   font-size: 20px;
   color: var(--primaryColor);
 }
-
-/* .sidebar-text:hover {
-  color: var(--white);
-} */
+.active {
+  width: 120px;
+  height: 5.5vh;
+  background-color: var(--secondaryColor);
+}
