@@ -5,10 +5,11 @@
 @import "./components/sideBarCategories/sideBarCategories.module.css";
 @import "./components/navBar/navBar.module.css";
 @import "./components/primaryButton/primaryButton.module.css";
+@import "./pages/recipes/resipes.module.css";
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 :root {
   /* COLORS */

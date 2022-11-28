@@ -12,7 +12,7 @@ const CardCategory = () => {
             <div
               className="card"
               key={meals.idMeal}
-              onClick={() => fetchClickCategory(`/${meals.idMeal}`)}
+              onClick={() => fetchClickCategory(`${meals.idMeal}`)}
             >
               <img src={meals.strMealThumb} alt="" />
               <h3>{meals.strMeal}</h3>

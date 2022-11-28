@@ -7,16 +7,21 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="front-container">
-        <img src={Logo} alt="Matglede logo" />
-        <h2 className="testing">
-          Tips, råd og planlegging for en enklere, og mer spennende mathverdag!
-        </h2>
-        <Link to="/meals">
-          <PrimaryButton text={"START IDAG"} />
-        </Link>
+      <div className="flexbox-container">
+        <div className="flexbox">
+          <img src={Logo} alt="Matglede logo" />
+          <h2 className="ingress">
+            Tips, råd og planlegging for en enklere, og mer spennende
+            mathverdag!
+          </h2>
+          <Link to="/meals">
+            <div className="primary-btn-container">
+              <PrimaryButton text={"START IDAG"} />
+            </div>
+          </Link>
+        </div>
       </div>
-      <img src={imgBackground} alt="background food" />
+      <img className="background" src={imgBackground} alt="background food" />
     </>
   );
 };

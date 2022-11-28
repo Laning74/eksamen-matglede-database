@@ -21,6 +21,7 @@ const Meals = () => {
       <SideBarCategories />
       <div className="search-meals-container">
         <h1 className="meals-title">Søk etter dine favorittoppskrifter!</h1>
+
         <div className="search-meals">
           <input
             type="text"

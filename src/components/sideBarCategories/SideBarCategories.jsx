@@ -1,17 +1,19 @@
 import React, { useContext, useCallback, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { foodContext } from "../context/Context";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   // const [clickCategory, setClickCategory] = useState("");
-  const { fetchClickCategory } = useContext(foodContext);
+  const { fetchClickCategory, showCategory } = useContext(foodContext);
 
-  const handleFetchClickcategory = useCallback(
-    (clickCategory) => {
-      fetchClickCategory(clickCategory);
-    },
-    [fetchClickCategory]
-  );
+  // const handleFetchClickCategory = useCallback(
+  //   (clickCategory) => {
+  //     fetchClickCategory(clickCategory);
+  //   },
+  //   [fetchClickCategory]
+  // );
+
   // console.log(showCategory);
 
   return (
@@ -19,14 +21,14 @@ const SideBar = () => {
       <div className="sidebar-wrapper">
         <ul className="sidebar-list">
           <div className="sidebar-item">
-            <NavLink to="/category/Beef" className="sidebar-link">
+            <Link to="/category/Beef" className="sidebar-link">
               <p
-                onClick={() => handleFetchClickcategory("Beef")}
+                onClick={() => fetchClickCategory("Beef")}
                 className="sidebar-text"
               >
                 Beef
               </p>
-            </NavLink>
+            </Link>
           </div>
 
           <div className="sidebar-item">

@@ -5,7 +5,7 @@ export const foodContext = createContext();
 
 export const AppContext = ({ children }) => {
   const [meals, setMeals] = useState([]);
-  const [category, setCategory] = useState([]);
+  const [recipes, setRecipes] = useState([]);
   const [showCategory, setShowCategory] = useState([]);
 
   const fetchMeals = useCallback((searchMeals) => {
@@ -19,12 +19,12 @@ export const AppContext = ({ children }) => {
       });
   }, []);
 
-  const fetchCategory = useCallback((category) => {
+  const fetchRecipes = useCallback((recipeId) => {
     axios
-      .get(`https://www.themealdb.com/api/json/v1/1/categories.php`)
+      .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`)
       .then((res) => {
-        console.log(res.data.categories);
-        setCategory(res.data.categories);
+        console.log(res.data.meals);
+        setRecipes(res.data.meals);
       });
   }, []);
 
@@ -43,8 +43,8 @@ export const AppContext = ({ children }) => {
       value={{
         fetchMeals,
         meals,
-        fetchCategory,
-        category,
+        fetchRecipes,
+        recipes,
         fetchClickCategory,
         showCategory,
       }}

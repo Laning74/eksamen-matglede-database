@@ -14,9 +14,9 @@ const Category = () => {
   //   fetchClickCategory(clickCategory);
   // }, [clickCategory, fetchClickCategory]);
 
-  useEffect(() => {
-    fetchClickCategory();
-  }, [fetchClickCategory, setCategory]);
+  // useEffect(() => {
+  //   fetchClickCategory();
+  // }, [fetchClickCategory, setCategory]);
 
   // useEffect(() => {
   //   fetchCategory();
