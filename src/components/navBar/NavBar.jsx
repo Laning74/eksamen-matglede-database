@@ -1,9 +1,12 @@
-// import Logo from "../logo/Logo";
 import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
+import { foodContext } from "../context/Context";
+import { useContext } from "react";
 import Logo from "../../../src/logo/Logo Matglede white.png";
 
 const Navbar = () => {
+  const { shoppinglist } = useContext(foodContext);
+
   return (
     <nav className="navbar">
       <NavLink to="/">
@@ -23,8 +26,9 @@ const Navbar = () => {
           UKEPLANLEGGER
         </NavLink>
 
-        <NavLink className="link-text" to="/home">
+        <NavLink className="link-text" to="/shoppinglist">
           DIN HANDLELISTE
+          <span> ({shoppinglist.length})</span>
         </NavLink>
       </ul>
     </nav>

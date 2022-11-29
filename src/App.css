@@ -5,11 +5,8 @@
 @import "./components/sideBarCategories/sideBarCategories.module.css";
 @import "./components/navBar/navBar.module.css";
 @import "./components/primaryButton/primaryButton.module.css";
-@import "./pages/recipes/resipes.module.css";
-
-/* .App {
-  text-align: center;
-} */
+@import "./components/recipes/resipes.module.css";
+@import "./components/shoppingList/shoppingList.module.css";
 
 :root {
   /* COLORS */
