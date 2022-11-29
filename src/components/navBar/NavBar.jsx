@@ -6,8 +6,8 @@ import Logo from "../../../src/logo/Logo Matglede white.png";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <NavLink className="logo" to="/">
-        <img src={Logo} alt="Matglede logo" />
+      <NavLink to="/">
+        <img className="logo" src={Logo} alt="Matglede logo" />
       </NavLink>
 
       <ul className="nav-text-container">

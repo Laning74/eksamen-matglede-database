@@ -2,7 +2,7 @@
   width: 200px;
   height: 60px;
   margin: 10px;
-  background-color: rgb(236, 89, 10);
+  background-color: var(--buttonColor);
   border: none;
   border-radius: 5px;
   color: white;
@@ -13,7 +13,7 @@
   width: 200px;
   height: 60px;
   margin: 10px;
-  background-color: rgb(144, 36, 3);
+  background-color: var(--buttonHover);
   border: none;
   border-radius: 5px;
   color: white;

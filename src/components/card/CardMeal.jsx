@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { foodContext } from "../context/Context";
 import { Link } from "react-router-dom";
 
-const Card = () => {
+const CardMeal = () => {
   // console.log(data);
-  const { fetchMeals, meals, fetchRecipes } = useContext(foodContext);
+  const { meals, fetchRecipes } = useContext(foodContext);
 
   return (
     <>
@@ -16,8 +16,9 @@ const Card = () => {
             key={meals.idMeal}
             onClick={() => fetchRecipes(`${meals.idMeal}`)}
           >
-            <img src={meals.strMealThumb} alt="" />
+            <img className="image-card" src={meals.strMealThumb} alt="" />
             <h3>{meals.strMeal}</h3>
+            <h4>{meals.strArea}</h4>
           </Link>
         );
       })}
@@ -25,4 +26,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CardMeal;

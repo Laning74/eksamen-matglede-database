@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Meals from "./pages/meals/Meals";
 import Category from "./pages/category/Category";
-import Recipes from "./pages/recipes/Recipes.jsx";
+import Recipes from "./pages/recipes/Recipes";
 
 function App() {
   return (

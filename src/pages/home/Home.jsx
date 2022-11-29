@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <div className="flexbox-container">
         <div className="flexbox">
-          <img src={Logo} alt="Matglede logo" />
+          <img className="home-logo" src={Logo} alt="Matglede logo" />
           <h2 className="ingress">
             Tips, råd og planlegging for en enklere, og mer spennende
             mathverdag!

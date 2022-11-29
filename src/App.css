@@ -18,6 +18,6 @@
   --black: #000000;
   --white: #fff;
   --blackTransparent: rgba(0, 0, 0, 0.74);
-  --greyColor: #525252;
-  --lightGreyColor: #808080;
+  --buttonColor: rgb(236, 89, 10);
+  --buttonHover: rgb(144, 36, 3);
 }

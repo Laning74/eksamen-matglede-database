@@ -2,11 +2,14 @@
   width: 180px;
   min-height: 200px;
   border-radius: 1rem;
-  background-color: #128ebb;
+  background-color: var(--secondaryColor);
   padding: 5px;
   margin: 5px;
+  text-align: center;
+  text-decoration: none;
 }
-img {
+
+.image-card {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
