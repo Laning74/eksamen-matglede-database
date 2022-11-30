@@ -1,0 +1,28 @@
+.title-container {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  width: 100%;
+  height: 120px;
+  z-index: -95;
+}
+
+.dagens-title {
+  color: var(--buttonHover);
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+  font-size: xxx-large;
+}
+
+.dagens-flex-section {
+  max-width: 80%;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+.ingredient {
+  margin-top: 2px;
+}

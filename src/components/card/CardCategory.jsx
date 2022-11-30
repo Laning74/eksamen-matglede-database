@@ -1,19 +1,22 @@
 import React, { useContext } from "react";
 import { foodContext } from "../context/Context";
+import { Link } from "react-router-dom";
 
 const CardCategory = () => {
-  const { fetchClickCategory, showCategory, fetchMeals, meals } =
+  const { fetchClickCategory, showCategory, fetchMeals, meals, fetchRecipes } =
     useContext(foodContext);
-  console.log(showCategory);
+
   return (
     <>
       {meals &&
         showCategory.map((meals) => {
           return (
-            <div
+            <Link
+              to={meals.idMeal}
               className="card"
               key={meals.idMeal}
               onClick={() =>
+                fetchRecipes(`${meals.idMeal}`) &&
                 fetchMeals(`${meals.idMeal}`) &&
                 fetchClickCategory(`${meals.idMeal}`)
               }
@@ -21,7 +24,7 @@ const CardCategory = () => {
               <img className="image-card" src={meals.strMealThumb} alt="" />
               <h3>{meals.strMeal}</h3>
               <h4>{meals.strArea}</h4>
-            </div>
+            </Link>
           );
         })}
     </>
