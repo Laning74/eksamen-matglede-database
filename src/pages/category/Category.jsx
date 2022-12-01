@@ -16,7 +16,7 @@ const Category = () => {
         </h1>
         <h2 className="category-title">Finn din favoritt idag!</h2>
       </div>
-      <div className="category-container">
+      <div className="card-container">
         <CardCategory />
       </div>
     </>

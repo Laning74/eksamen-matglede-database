@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { foodContext } from "../../components/context/Context";
-import PrimaryButton from "../../components/primaryButton/PrimaryButton";
+import PrimaryButtonSmall from "../primaryButton/PrimaryButtonSmall";
 
 const RecipesInfo = () => {
   const { recipes, addToShoppinList } = useContext(foodContext);
@@ -91,9 +91,10 @@ const RecipesInfo = () => {
                         </li>
                       </div>
                     </ul>
-                    <PrimaryButton
+                    <PrimaryButtonSmall
                       onClick={() => addToShoppinList(recipes)}
-                      text={"Send til handleliste"}
+                      text={"Til handleliste"}
+                      className="btn-text"
                     />
                   </div>
                 </div>

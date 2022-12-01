@@ -1,19 +1,36 @@
 .card {
   width: 180px;
   min-height: 200px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: var(--secondaryColor);
-  padding: 5px;
+  padding: 7px;
   margin: 5px;
   text-align: center;
   text-decoration: none;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .image-card {
   width: 100%;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: 1px solid black;
 }
-h3 {
-  color: white;
+
+.meals-title {
+  color: var(--primaryColor);
   font-size: 18px;
+  border-bottom: 1px solid black;
+  padding: 3px;
+}
+
+.area-title {
+  color: var(--black);
 }

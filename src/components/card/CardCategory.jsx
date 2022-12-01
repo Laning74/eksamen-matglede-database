@@ -22,7 +22,7 @@ const CardCategory = () => {
               }
             >
               <img className="image-card" src={meals.strMealThumb} alt="" />
-              <h3>{meals.strMeal}</h3>
+              <h3 className="meals-title">{meals.strMeal}</h3>
               <h4>{meals.strArea}</h4>
             </Link>
           );

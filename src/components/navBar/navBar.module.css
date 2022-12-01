@@ -7,13 +7,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  /* z-index: -91; */
 }
 
 .logo {
   width: 200px;
-  margin: 20px;
-  padding-bottom: 3px;
+  margin: 22px;
+  padding-top: 3px;
 }
 
 .link-text {
@@ -26,7 +25,6 @@
   cursor: pointer;
   font-size: larger;
   font-weight: 500;
-  /* gap: 3rem; */
   display: inline-block;
 }
 

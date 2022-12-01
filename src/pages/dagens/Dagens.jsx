@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Navbar from "../../components/navBar/NavBar";
-import PrimaryButton from "../../components/primaryButton/PrimaryButton";
+import PrimaryButtonSmall from "../../components/primaryButton/PrimaryButtonSmall";
 import { foodContext } from "../../components/context/Context";
 import SideBarCategories from "../../components/sideBarCategories/SideBarCategories";
 
@@ -101,7 +101,7 @@ function Dagens() {
                         </li>
                       </div>
                     </ul>
-                    <PrimaryButton
+                    <PrimaryButtonSmall
                       onClick={() => fetchRandomMeal(randomMeal)}
                       className="ta-sjansen-btn"
                       text={"Prøv igjen!"}

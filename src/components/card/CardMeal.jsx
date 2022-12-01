@@ -17,8 +17,8 @@ const CardMeal = () => {
             onClick={() => fetchRecipes(`${meals.idMeal}`)}
           >
             <img className="image-card" src={meals.strMealThumb} alt="" />
-            <h3>{meals.strMeal}</h3>
-            <h4>{meals.strArea}</h4>
+            <h3 className="meals-title">{meals.strMeal}</h3>
+            <h4 className="area-title">{meals.strArea} food</h4>
           </Link>
         );
       })}

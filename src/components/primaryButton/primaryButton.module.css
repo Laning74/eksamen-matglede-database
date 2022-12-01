@@ -19,3 +19,25 @@
   color: white;
   font-size: 22px;
 }
+
+.primary-button-small {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: var(--buttonColor);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.primary-button-small:hover {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: var(--buttonHover);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
