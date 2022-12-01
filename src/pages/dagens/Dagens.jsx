@@ -18,9 +18,9 @@ function Dagens() {
       </div>
 
       {randomMeal &&
-        randomMeal.map((randomMeal) => {
+        randomMeal.map((randomMeal, index) => {
           return (
-            <div className="dagens-flex-section">
+            <div className="dagens-flex-section" key={index}>
               <div className="recipes-container">
                 <img
                   className="image-recipes"

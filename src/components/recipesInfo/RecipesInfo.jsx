@@ -1,19 +1,52 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { foodContext } from "../../components/context/Context";
 import PrimaryButtonSmall from "../primaryButton/PrimaryButtonSmall";
 
 const RecipesInfo = () => {
-  const { recipes, addToShoppinList } = useContext(foodContext);
+  // const [video, setVideo] = useState();
+  // const [myShoppingList, setMyShoppingList] = useState([]);
+  const { recipes, setRecipes, addToShoppinList } = useContext(foodContext);
+
+  // let recipesId = []
+
+  //   if(video) {
+  //     const strYoutube = video.strYoutube;
+  //     const str = strYoutube.split("=");
+  //     recipeId = str[str.length - 1];
+  //   }
+
+  setVideo(video.strYoutube);
+  // let myShoppingList = [];
+
+  // function handleSetShoppingList(recipes) {
+  //   setRecipes(recipes);
+  //   localStorage.setItem("recipes", recipes);
+  // }
+
+  // useEffect(() => {
+  //   localStorage.setItem("shoppinglist", JSON.stringify(shoppingList));
+  // }, [shoppingList]);
+
+  // useEffect(() => {
+  //   const data = localStorage.getItem("shoppinglist");
+  //   if (data !== "") setShoppingList(JSON.parse(data));
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem("recipes", JSON.stringify(recipes));
+  //   console.log(recipes);
+  // }, [recipes]);
 
   return (
     <>
       {recipes &&
-        recipes.map((recipes) => {
-          return (
-            <div className="flex-section">
+        recipes.map((recipes, index) => {
+          return !video ? (
+            ""
+          ) : (
+            <div className="flex-section" key={index}>
               <div className="recipes-container">
                 <img
-                  key={recipes.strMealThumb}
                   className="image-recipes"
                   src={recipes.strMealThumb}
                   alt=""
@@ -25,7 +58,7 @@ const RecipesInfo = () => {
                   </h2>
                   <div className="ingredient-container">
                     <h3 className="instructions-title">Ingredienser:</h3> <br />
-                    <ul className="ingredient" key={recipes.idMeal}>
+                    <ul className="ingredient">
                       <div className="column-1">
                         <li>
                           {recipes.strIngredient1} {recipes.strMeasure1}
@@ -95,6 +128,7 @@ const RecipesInfo = () => {
                       onClick={() => addToShoppinList(recipes)}
                       text={"Til handleliste"}
                       className="btn-text"
+                      // onChange={(e) => handleSetShoppingList(e.myShoppingList)}
                     />
                   </div>
                 </div>
@@ -107,6 +141,15 @@ const RecipesInfo = () => {
             </div>
           );
         })}
+      {/* <div className="video">
+        <iframe
+          width="
+                        100%"
+          height="515"
+          title="recipeVideo"
+          src={`https://www.youtube.com/embed/${recipeId}`}
+        ></iframe>
+      </div> */}
     </>
   );
 };

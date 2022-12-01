@@ -4,6 +4,7 @@ import { foodContext } from "../../components/context/Context";
 
 function ShoppingList(props) {
   const { recipes } = useContext(foodContext);
+
   return (
     <div className="popup-box">
       <div className="box">
@@ -12,10 +13,10 @@ function ShoppingList(props) {
         </span>
         {props.content}
 
-        {recipes.map((recipes) => (
-          <div>
+        {recipes.map((recipes, index) => (
+          <div key={index}>
             <h2 className="title-recipes">{recipes.strMeal}</h2>
-            <div className="ingrediens-recipes" key={recipes.idMeal}>
+            <div className="ingrediens-recipes">
               <h4>{recipes.strIngredient1}</h4>
               <h4>{recipes.strIngredient2}</h4>
               <h4>{recipes.strIngredient3}</h4>

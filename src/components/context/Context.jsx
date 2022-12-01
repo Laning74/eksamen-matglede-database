@@ -8,7 +8,7 @@ export const AppContext = ({ children }) => {
   const [recipes, setRecipes] = useState([]);
   const [showCategory, setShowCategory] = useState([]);
   const [randomMeal, setRandomMeal] = useState([]);
-  const [shoppinglist, setShoppinglist] = useState([]);
+  const [shoppingList, setShoppingList] = useState([]);
 
   const fetchMeals = useCallback((searchMeals) => {
     axios
@@ -16,7 +16,7 @@ export const AppContext = ({ children }) => {
         `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchMeals}`
       )
       .then((res) => {
-        console.log(res.data.meals);
+        // console.log(res.data.meals);
         setMeals(res.data.meals);
       });
   }, []);
@@ -25,7 +25,7 @@ export const AppContext = ({ children }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`)
       .then((res) => {
-        console.log(res.data.meals);
+        // console.log(res.data.meals);
         setRecipes(res.data.meals);
       });
   }, []);
@@ -44,16 +44,16 @@ export const AppContext = ({ children }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/random.php`)
       .then((res) => {
-        console.log(res.data.meals);
+        // console.log(res.data.meals);
         setRandomMeal(res.data.meals);
       });
   }, []);
 
-  const addToShoppinList = useCallback((name) => {
+  const addToShoppinList = useCallback((recipeId) => {
     axios
-      .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`)
-      .then((name) => {
-        setShoppinglist((prevState) => [...prevState, { name }]);
+      .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`)
+      .then((recipeId) => {
+        setShoppingList((prevState) => [...prevState, `${recipeId}`]);
       });
   }, []);
 
@@ -69,7 +69,7 @@ export const AppContext = ({ children }) => {
         fetchRandomMeal,
         randomMeal,
         addToShoppinList,
-        shoppinglist,
+        shoppingList,
       }}
     >
       {children}
