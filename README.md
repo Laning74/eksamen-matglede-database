@@ -1,4 +1,4 @@
-# Eksamen matglede
+# Eksamen Matglede
 
 Til denne eksamen var oppgaven og lage en applikasjon som hentet data fra et API, vi fikk tre forskjellige API og velge mellom. Mitt valg falt på en oppskriftsdatabase basert på API fra fra TheMealDB.
 
