@@ -38,11 +38,3 @@
   font-size: 20px;
   color: var(--primaryColor);
 }
-.active {
-  font-size: xx-large;
-}
-/* .active {
-  width: 120px;
-  height: 5.5vh;
-  background-color: var(--secondaryColor);
-} */

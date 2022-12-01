@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useContext } from "react";
+import React, { useState, useCallback, useContext } from "react";
 import Navbar from "../../components/navBar/NavBar";
 import CardMeal from "../../components/card/CardMeal";
 import PrimaryButtonSmall from "../../components/primaryButton/PrimaryButtonSmall";
@@ -35,10 +35,8 @@ const Meals = () => {
           />
           <PrimaryButtonSmall
             onClick={handleFetchMeals}
-            // className="se-btn"
             text={"Søk etter måltid"}
           />
-          {/* <button onClick={handleFetchMeals}> Search Meal </button> */}
         </div>
       </div>
 

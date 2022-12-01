@@ -36,10 +36,6 @@
   color: var(--secondaryColor);
 }
 
-/* .active {
-  color: var(--secondaryColor);
-} */
-
 .shoppinglist-title {
   color: var(--buttonHover);
 }

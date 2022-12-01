@@ -3,7 +3,6 @@ import { foodContext } from "../context/Context";
 import { Link } from "react-router-dom";
 
 const CardMeal = () => {
-  // console.log(data);
   const { meals, fetchRecipes } = useContext(foodContext);
 
   return (

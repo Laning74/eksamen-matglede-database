@@ -1,41 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { foodContext } from "../context/Context";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import Logo from "../../../src/logo/Logo Matglede white.png";
 import ShoppingList from "../shoppingList/ShoppingList";
 
 const Navbar = () => {
   const [shoppingListOpen, setShoppingListOpen] = useState(false);
-  // const [myShoppingList, setMyShoppingList] = useState([]);
 
-  // let myShoppingList = [];
-
-  const {
-    shoppingList,
-    fetchRandomMeal,
-    randomMeal,
-    setRecipes,
-    setShoppingList,
-    recipes,
-  } = useContext(foodContext);
-
-  // function handleSetShoppingList(recipes) {
-  //   setRecipes(recipes);
-  //   localStorage.setItem("recipes", recipes);
-  // }
-
-  // useEffect(() => {
-  //   localStorage.setItem("recipes", JSON.stringify(recipes));
-  //   console.log(recipes);
-  // }, [recipes]);
-
-  // console.log(recipes);
+  const { shoppingList, fetchRandomMeal, randomMeal } = useContext(foodContext);
 
   const togglePopup = () => {
     setShoppingListOpen(!shoppingListOpen);
   };
-  // handleSetShoppingList(shoppingList);
 
   return (
     <nav className="navbar">
@@ -62,7 +39,6 @@ const Navbar = () => {
           type="button"
           value="Click to Open Popup"
           onClick={togglePopup}
-          // onChange={(e) => handleSetShoppingList(e.myShoppingList)}
         >
           DIN HANDLELISTE
           <span> ({shoppingList.length})</span>

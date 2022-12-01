@@ -16,7 +16,6 @@ export const AppContext = ({ children }) => {
         `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchMeals}`
       )
       .then((res) => {
-        // console.log(res.data.meals);
         setMeals(res.data.meals);
       });
   }, []);
@@ -25,7 +24,6 @@ export const AppContext = ({ children }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`)
       .then((res) => {
-        // console.log(res.data.meals);
         setRecipes(res.data.meals);
       });
   }, []);
@@ -44,7 +42,6 @@ export const AppContext = ({ children }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/random.php`)
       .then((res) => {
-        // console.log(res.data.meals);
         setRandomMeal(res.data.meals);
       });
   }, []);

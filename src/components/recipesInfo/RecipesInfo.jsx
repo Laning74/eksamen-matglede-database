@@ -1,49 +1,15 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { foodContext } from "../../components/context/Context";
 import PrimaryButtonSmall from "../primaryButton/PrimaryButtonSmall";
 
 const RecipesInfo = () => {
-  // const [video, setVideo] = useState();
-  // const [myShoppingList, setMyShoppingList] = useState([]);
-  const { recipes, setRecipes, addToShoppinList } = useContext(foodContext);
-
-  // let recipesId = []
-
-  //   if(video) {
-  //     const strYoutube = video.strYoutube;
-  //     const str = strYoutube.split("=");
-  //     recipeId = str[str.length - 1];
-  //   }
-
-  setVideo(video.strYoutube);
-  // let myShoppingList = [];
-
-  // function handleSetShoppingList(recipes) {
-  //   setRecipes(recipes);
-  //   localStorage.setItem("recipes", recipes);
-  // }
-
-  // useEffect(() => {
-  //   localStorage.setItem("shoppinglist", JSON.stringify(shoppingList));
-  // }, [shoppingList]);
-
-  // useEffect(() => {
-  //   const data = localStorage.getItem("shoppinglist");
-  //   if (data !== "") setShoppingList(JSON.parse(data));
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("recipes", JSON.stringify(recipes));
-  //   console.log(recipes);
-  // }, [recipes]);
+  const { recipes, addToShoppinList } = useContext(foodContext);
 
   return (
     <>
       {recipes &&
         recipes.map((recipes, index) => {
-          return !video ? (
-            ""
-          ) : (
+          return (
             <div className="flex-section" key={index}>
               <div className="recipes-container">
                 <img
@@ -128,7 +94,6 @@ const RecipesInfo = () => {
                       onClick={() => addToShoppinList(recipes)}
                       text={"Til handleliste"}
                       className="btn-text"
-                      // onChange={(e) => handleSetShoppingList(e.myShoppingList)}
                     />
                   </div>
                 </div>
@@ -141,15 +106,6 @@ const RecipesInfo = () => {
             </div>
           );
         })}
-      {/* <div className="video">
-        <iframe
-          width="
-                        100%"
-          height="515"
-          title="recipeVideo"
-          src={`https://www.youtube.com/embed/${recipeId}`}
-        ></iframe>
-      </div> */}
     </>
   );
 };
