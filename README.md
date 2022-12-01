@@ -31,16 +31,7 @@ Open http://localhost:3000 to view it in your browser.
 
 Fargepalett til prosjektet ser du i App.css filen
 
-## Videreutvikling
 
-Jeg har flere planer om videreutvikling av produktet, en spennende oppgave som jeg har mange ideer for videre bruk.
-
-- Jobbe videre med "legge til handlelisten funksjonen", da den ikke funker optimalt.
-  Og jeg rakk ikke jobbe mere med den.
-- Legge til ukeplanlegger over måltider.
-- Enten legge til i denne databasen en portal der du må være innlogget for og legge til egne oppskrifter i en egen database.
-  Eller eventuellt lage en tilsvarende løsning for egne oppskrifter.
-- Jeg har sammen med flere andre plan for produksjon av en matbok der jeg har ansvaret for layout/grafisk produksjon. Da kan jeg også tenke videre med og lage en nettside til denne boken når den er ferdig, basert på løsninger fra denne oppgaven.
 
 ## API References
 
@@ -76,3 +67,15 @@ Jeg lagde et eget useContext component der jeg fetchet ut alle endepunktene jeg 
 ```http
   GET https://www.themealdb.com/api/json/v1/1/random.
 ```
+
+
+## Videreutvikling
+
+Jeg har flere planer om videreutvikling av produktet, en spennende oppgave som jeg har mange ideer for videre bruk.
+
+- Jobbe videre med "legge til handlelisten funksjonen", da den ikke funker optimalt.
+  Og jeg rakk ikke jobbe mere med den.
+- Legge til ukeplanlegger over måltider.
+- Enten legge til i denne databasen en portal der du må være innlogget for og legge til egne oppskrifter i en egen database.
+  Eller eventuellt lage en tilsvarende løsning for egne oppskrifter.
+- Jeg har sammen med flere andre plan for produksjon av en matbok der jeg har ansvaret for layout/grafisk produksjon. Da kan jeg også tenke videre med og lage en nettside til denne boken når den er ferdig, basert på løsninger fra denne oppgaven.
